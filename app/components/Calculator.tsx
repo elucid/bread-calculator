@@ -36,10 +36,16 @@ export default function Calculator({ recipe }: CalculatorProps) {
       </div>
       <div className="space-y-2">
         {Object.entries(recipe).map(([ingredient, baseAmount]) => (
-          <div key={ingredient} className="flex justify-between">
-            <span className="text-gray-700 dark:text-gray-300">{ingredient}:</span>
-            <span className="font-medium text-gray-900 dark:text-white">{baseAmount * multiplier}g</span>
-          </div>
+          ingredient === '__hr__' ? (
+            <hr key={ingredient} className="my-2 border-t border-gray-300 dark:border-gray-600" />
+          ) : (
+            <div key={ingredient} className="flex justify-between">
+              <span className="text-gray-700 dark:text-gray-300">
+                {ingredient === 'Lukewarm Water (2)' ? 'Lukewarm Water' : ingredient}:
+              </span>
+              <span className="font-medium text-gray-900 dark:text-white">{baseAmount * multiplier}g</span>
+            </div>
+          )
         ))}
       </div>
     </div>

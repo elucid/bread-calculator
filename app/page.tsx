@@ -23,10 +23,12 @@ export default function Home() {
     },
     dough: {
       'Levain': 100,
-      'Lukewarm Water': 375,
+      'Lukewarm Water': 350,
       'Whole Wheat Flour': 25,
       'Rye Flour': 25,
       'All Purpose Flour': 450,
+      '__hr__': 0, // This will be used as a marker for the horizontal rule
+      'Lukewarm Water (2)': 25,
       'Salt': 10,
     },
   }
