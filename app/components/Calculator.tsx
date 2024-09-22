@@ -41,7 +41,7 @@ export default function Calculator({ recipe }: CalculatorProps) {
           ) : (
             <div key={ingredient} className="flex justify-between">
               <span className="text-gray-700 dark:text-gray-300">
-                {ingredient === 'Lukewarm Water (2)' ? 'Lukewarm Water' : ingredient}:
+                {ingredient === 'Lukewarm Water (2)' ? 'Lukewarm Water' : ingredient}
               </span>
               <span className="font-medium text-gray-900 dark:text-white">{baseAmount * multiplier}g</span>
             </div>
