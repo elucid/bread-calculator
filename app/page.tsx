@@ -32,8 +32,8 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100 dark:bg-gray-900">
-      <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+    <main className="min-h-screen bg-gray-100 dark:bg-gray-900 p-8">
+      <div className="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
         <Tab.Group onChange={(index) => setMode(['starter', 'levain', 'dough'][index])}>
           <Tab.List className="flex bg-gray-200 dark:bg-gray-700 p-1">
             {Object.keys(recipes).map((key) => (

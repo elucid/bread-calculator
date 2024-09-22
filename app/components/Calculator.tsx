@@ -16,7 +16,7 @@ export default function Calculator({ recipe }: CalculatorProps) {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800">
+    <div>
       <div className="mb-6">
         <div className="flex items-center justify-center mb-2">
           <span className="text-4xl font-bold text-gray-700 dark:text-gray-300">
